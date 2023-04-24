@@ -6,7 +6,8 @@ background-size: cover;
 }
 .categoria {
   display: flex;
-  margin: 3rem;
+  flex-wrap: wrap;
+  height: auto;
   justify-content: space-between;
 }
 
@@ -15,12 +16,16 @@ background-size: cover;
   transition: 0.4s;
 }
 
+.producto {
+  margin-bottom: auto;
+  height: auto;
+}
+
 .tarjeta-categoria:hover {
   box-shadow: 5px 5px 20px rgba(254, 254, 254, 0.5);
 }
 
 .tarjeta-categoria img {
-  margin-left: -0.8rem;
   width: 18rem;
   height: 25rem;
 }

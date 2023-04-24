@@ -1,0 +1,720 @@
+
+<div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img
+          src="../img/comic/green-latern-noche-mas-oscura.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Blackest Night</h5>
+          <p class="card-text">Precio: <strong>$11859</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a
+              href="../pages/productos/producto 1.html"
+              class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger = document.getElementById("liveToastBtn");
+              const toastLiveExample = document.getElementById("liveToast");
+              if (toastTrigger) {
+                toastTrigger.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img src="../img/comic/bat q rie.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">El Batman que Ríe</h5>
+          <p class="card-text">Precio: <strong>$8933</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn1"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast1"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger1 = document.getElementById("liveToastBtn1");
+              const toastLiveExample1 = document.getElementById("liveToast1");
+              if (toastTrigger1) {
+                toastTrigger1.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample1);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img src="../img/comic/injustice.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Injustice: Gods Among us</h5>
+          <p class="card-text">Precio: <strong>$10738</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn2"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast2"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger2 = document.getElementById("liveToastBtn2");
+              const toastLiveExample2 = document.getElementById("liveToast2");
+              if (toastTrigger2) {
+                toastTrigger2.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample2);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img
+          src="../img/comic/superior iron man}.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Iron man Superior. Integral</h5>
+          <p class="card-text">Precio: <strong>$9839</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a
+              href="../pages/productos/producto 2.html"
+              class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn3"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast3"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger3 = document.getElementById("liveToastBtn3");
+              const toastLiveExample3 = document.getElementById("liveToast3");
+              if (toastTrigger3) {
+                toastTrigger3.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample3);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img
+          src="../img/comic/planeta hulk.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Hulk: Planet Hulk Prelude</h5>
+          <p class="card-text">Precio: <strong>$10374</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn4"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast4"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger4 = document.getElementById("liveToastBtn4");
+              const toastLiveExample4 = document.getElementById("liveToast4");
+              if (toastTrigger4) {
+                toastTrigger4.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img
+          src="../img/comic/into the spiderverse.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Spider-Man - Spider-Verse</h5>
+          <p class="card-text">Precio: <strong>$11508</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn5"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast5"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger5 = document.getElementById("liveToastBtn5");
+              const toastLiveExample5 = document.getElementById("liveToast5");
+              if (toastTrigger5) {
+                toastTrigger5.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img
+          src="../img/comic/death of wolverin.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Death Of Wolverine</h5>
+          <p class="card-text">Precio: <strong>$7286</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a
+              href="../pages/productos/producto 3.html"
+              class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn6"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast6"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger6 = document.getElementById("liveToastBtn6");
+              const toastLiveExample6 = document.getElementById("liveToast6");
+              if (toastTrigger6) {
+                toastTrigger6.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img
+          src="../img/comic/old man logan.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Wolverine: Old man Logan</h5>
+          <p class="card-text">Precio: <strong>$12605</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn7"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast7"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger7 = document.getElementById("liveToastBtn7");
+              const toastLiveExample7 = document.getElementById("liveToast7");
+              if (toastTrigger7) {
+                toastTrigger7.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img src="../img/comic/flashpoint.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Flashpoint</h5>
+          <p class="card-text">Precio: <strong>$11039</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn8"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast8"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger8 = document.getElementById("liveToastBtn8");
+              const toastLiveExample8 = document.getElementById("liveToast8");
+              if (toastTrigger8) {
+                toastTrigger8.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="card tarjeta-categoria h-100 col-sm-12 col-md-6 col-lg-4 col-xl-4"
+        style="width: 18rem"
+      >
+        <img
+          src="../img/comic/Batman la Broma Asesina.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Batman la Broma Asesina</h5>
+          <p class="card-text">Precio: <strong>$ 3420</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn9"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast9"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger9 = document.getElementById("liveToastBtn9");
+              const toastLiveExample9 = document.getElementById("liveToast9");
+              if (toastTrigger9) {
+                toastTrigger9.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample9);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="card tarjeta-categoria h-100 col-sm-12 col-md-6 col-lg-4 col-xl-4"
+        style="width: 18rem"
+      >
+        <img
+          src="../img/comic/Daredevil artes oscura.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Daredevil- vol 03 Arte Oscuro</h5>
+          <p class="card-text">Precio: <strong>$ 3315</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn11"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast11"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger11 = document.getElementById("liveToastBtn11");
+              const toastLiveExample11 = document.getElementById("liveToast11");
+              if (toastTrigger11) {
+                toastTrigger11.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample1);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="card tarjeta-categoria h-100 col-sm-12 col-md-6 col-lg-4 col-xl-4"
+        style="width: 18rem"
+      >
+        <img
+          src="../img/comic/The Flash  The Flash age.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">The Flash Vol. 14: The Flash age</h5>
+          <p class="card-text">Precio: <strong>$ 11158</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn10"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast10"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger10 = document.getElementById("liveToastBtn10");
+              const toastLiveExample10 = document.getElementById("liveToast10");
+              if (toastTrigger1) {
+                toastTrigger10.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample10);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
