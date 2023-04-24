@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
+
+/*VARIABLES*/
+
+:root {
+  --azul: #003049;
+  --rojo: #d62826;
+  --naranja: #f77f00;
+  --naranja2: #fcbf49;
+  --beige: #eae2b7;
+  --Facebook-color: #3b5998;
+  --Google-color: #db4a39;
+}
+
+* {
+    font-family: "Antonio", sans-serif;
+    box-sizing: border-box;
+  }

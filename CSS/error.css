@@ -1,0 +1,68 @@
+@import url(main.css);
+
+body {
+  background-color: rgb(189, 189, 194);
+  font-family: "Antonio";
+}
+div {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(41, 38, 38);
+  border-color: rgb(42, 47, 87);
+}
+
+h2 {
+  text-align: center;
+  color: rgb(47, 32, 134);
+  border-color: rgb(14, 15, 73);
+  font-style: bold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3rem;
+}
+
+.libro img {
+  height: 20rem;
+  width: 25rem;
+}
+.inicio {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.inicio button {
+  background-color: rgb(47, 32, 134);
+  width: 6rem;
+  border-radius: 10px;
+  border: none;
+  text-shadow: 3px 3px 6px black, 0 0 1em rgb(111, 108, 108), 0 0 0.2em #ffffff;
+}
+
+a {
+  border-radius: 10px;
+  height: 100%;
+  text-decoration: none;
+}
+
+a button {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+a:visited {
+  width: 80%;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  box-shadow: 5px 5px 20px rgba(16, 16, 16, 0.5);
+}
+a {
+  transition: 0.4s;
+}

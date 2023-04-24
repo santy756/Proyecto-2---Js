@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <script
+      src="https://kit.fontawesome.com/f5b208ecfb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="Stylesheet" href="../CSS/categorias.css" />
+    <!--AQUI IRA EL CSS CORRESPONDIENTE A CADA PAGINA-->
+    <link rel="Stylesheet" href="../CSS/index.css" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-light navegacion">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/icono.png" alt="" width="30" height="24" />
+        </a>
+        <a class="navbar-brand" href="../index.html">BLARE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >INICIO</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                INGRESAR
+              </a>
+              <ul class="dropdown-menu submenu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Iniciar"
+                    >Iniciar Sesion</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./registro.html"
+                    >Registrarse</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#Carrito"
+                >MIS COMPRAS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ayuda.html">AYUDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre-nosotros.html"
+                >SOBRE NOSOTROS</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder=""
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light btn-lupa" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="modal fade"
+      id="Iniciar"
+      tabindex="-1"
+      aria-labelledby="Iniciar"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 sty" id="exampleModalLabel">
+              INICIAR SESION
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../img/icono.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Usuario</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="floatingPassword"
+                      placeholder="Password"
+                    />
+                    <label for="floatingPassword">Contraseña</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-center">Ingresar con</h2>
+          <div class="Botones-redes">
+            <button type="button" class="btn-facebook">
+              <a href="./error404.html">Facebook</a>
+            </button>
+            <button type="button" class="btn-google">
+              <a href="./error404.html">Google</a>
+            </button>
+          </div>
+          <div class="contraseña-olvidada">
+            <a href="./error404.html"><p>¿Olvidaste tu contraseña?</p></a>
+          </div>
+          <div class="modal-footer">
+            <div role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-danger">
+                Iniciar Sesion
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="Carrito"
+      tabindex="-1"
+      aria-labelledby="Carrito"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Mis compras</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../img/comic/flashpoint.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Flashpoint</h5>
+                  <p class="card-text">Precio: $11039</p>
+                  <p class="card-text">
+                    <small class="text-muted">Agregado recientemente</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../img/mangas/BnH 33.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">BOKU NO HERO #33</h5>
+                  <p class="card-text">Precio: $953</p>
+                  <p class="card-text">
+                    <small class="text-muted">Agregado recientemente</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-end subtotal">
+            Total:<b class="text-danger">$11992</b>
+          </p>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-outline-danger">
+              <a href="./error404.html">Ir a pagar</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FIN NAVBAR-->
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="categoria row" id="agregar_producto">
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img
+          src="../img/comic/green-latern-noche-mas-oscura.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Blackest Night</h5>
+          <p class="card-text">Precio: <strong>$11859</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a
+              href="../pages/productos/producto 1.html"
+              class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger = document.getElementById("liveToastBtn");
+              const toastLiveExample = document.getElementById("liveToast");
+              if (toastTrigger) {
+                toastTrigger.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img src="../img/comic/bat q rie.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">El Batman que Ríe</h5>
+          <p class="card-text">Precio: <strong>$8933</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn1"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast1"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger1 = document.getElementById("liveToastBtn1");
+              const toastLiveExample1 = document.getElementById("liveToast1");
+              if (toastTrigger1) {
+                toastTrigger1.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample1);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img src="../img/comic/injustice.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Injustice: Gods Among us</h5>
+          <p class="card-text">Precio: <strong>$10738</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn2"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast2"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger2 = document.getElementById("liveToastBtn2");
+              const toastLiveExample2 = document.getElementById("liveToast2");
+              if (toastTrigger2) {
+                toastTrigger2.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample2);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img
+          src="../img/comic/superior iron man}.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Iron man Superior. Integral</h5>
+          <p class="card-text">Precio: <strong>$9839</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a
+              href="../pages/productos/producto 2.html"
+              class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn3"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast3"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger3 = document.getElementById("liveToastBtn3");
+              const toastLiveExample3 = document.getElementById("liveToast3");
+              if (toastTrigger3) {
+                toastTrigger3.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample3);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img
+          src="../img/comic/planeta hulk.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Hulk: Planet Hulk Prelude</h5>
+          <p class="card-text">Precio: <strong>$10374</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn4"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast4"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger4 = document.getElementById("liveToastBtn4");
+              const toastLiveExample4 = document.getElementById("liveToast4");
+              if (toastTrigger4) {
+                toastTrigger4.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img
+          src="../img/comic/into the spiderverse.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Spider-Man - Spider-Verse</h5>
+          <p class="card-text">Precio: <strong>$11508</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn5"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast5"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger5 = document.getElementById("liveToastBtn5");
+              const toastLiveExample5 = document.getElementById("liveToast5");
+              if (toastTrigger5) {
+                toastTrigger5.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img
+          src="../img/comic/death of wolverin.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Death Of Wolverine</h5>
+          <p class="card-text">Precio: <strong>$7286</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a
+              href="../pages/productos/producto 3.html"
+              class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn6"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast6"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger6 = document.getElementById("liveToastBtn6");
+              const toastLiveExample6 = document.getElementById("liveToast6");
+              if (toastTrigger6) {
+                toastTrigger6.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img
+          src="../img/comic/old man logan.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Wolverine: Old man Logan</h5>
+          <p class="card-text">Precio: <strong>$12605</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn7"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast7"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger7 = document.getElementById("liveToastBtn7");
+              const toastLiveExample7 = document.getElementById("liveToast7");
+              if (toastTrigger7) {
+                toastTrigger7.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card tarjeta-categoria h-100" style="width: 18rem">
+        <img src="../img/comic/flashpoint.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Flashpoint</h5>
+          <p class="card-text">Precio: <strong>$11039</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn8"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast8"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger8 = document.getElementById("liveToastBtn8");
+              const toastLiveExample8 = document.getElementById("liveToast8");
+              if (toastTrigger8) {
+                toastTrigger8.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="card tarjeta-categoria h-100 col-sm-12 col-md-6 col-lg-4 col-xl-4"
+        style="width: 18rem"
+      >
+        <img
+          src="../img/comic/Batman la Broma Asesina.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Batman la Broma Asesina</h5>
+          <p class="card-text">Precio: <strong>$ 3420</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn9"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast9"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger9 = document.getElementById("liveToastBtn9");
+              const toastLiveExample9 = document.getElementById("liveToast9");
+              if (toastTrigger9) {
+                toastTrigger9.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample9);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="card tarjeta-categoria h-100 col-sm-12 col-md-6 col-lg-4 col-xl-4"
+        style="width: 18rem"
+      >
+        <img
+          src="../img/comic/Daredevil artes oscura.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Daredevil- vol 03 Arte Oscuro</h5>
+          <p class="card-text">Precio: <strong>$ 3315</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn11"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast11"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger11 = document.getElementById("liveToastBtn11");
+              const toastLiveExample11 = document.getElementById("liveToast11");
+              if (toastTrigger11) {
+                toastTrigger11.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample1);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="card tarjeta-categoria h-100 col-sm-12 col-md-6 col-lg-4 col-xl-4"
+        style="width: 18rem"
+      >
+        <img
+          src="../img/comic/The Flash  The Flash age.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">The Flash Vol. 14: The Flash age</h5>
+          <p class="card-text">Precio: <strong>$ 11158</strong></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../pages/error404.html" class="btn btn-outline-dark"
+              >Producto</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              id="liveToastBtn10"
+            >
+              Comprar
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast10"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img src="../img/icono.png" class="rounded me-2" alt="..." />
+                  <strong class="me-auto">BLARE</strong>
+                  <small></small>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">Añadido al carrito.</div>
+              </div>
+            </div>
+            <!-- Scrpt Toast Boostrap -->
+            <script>
+              const toastTrigger10 = document.getElementById("liveToastBtn10");
+              const toastLiveExample10 = document.getElementById("liveToast10");
+              if (toastTrigger1) {
+                toastTrigger10.addEventListener("click", () => {
+                  const toast = new bootstrap.Toast(toastLiveExample10);
+
+                  toast.show();
+                });
+              }
+            </script>
+            <!-- Scrpt Toast Boostrap -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- paginacion -->
+    <div class="paginacion">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="./error404.html">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="./error404.html">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="./error404.html">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="./error404.html">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- FIN CONTENIDO PRINCIPAL -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-light">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <div class="me-5 d-none d-lg-block">
+          <span
+            >Mantente conectado con nosotros a traves de nuestras redes
+            sociales:</span
+          >
+        </div>
+        <div class="btn-redes">
+          <a href="./error404.html" class="me-4 text-reset btn-fb">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="./error404.html" class="me-4 text-reset btn-tw">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="./error404.html" class="me-4 text-reset btn-yt">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="./error404.html" class="me-4 text-reset btn-ig">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <img src="../img/icono.png" alt="" width="100" height="85" />
+              </h6>
+              <p>
+                Blare es una marca creada por un grupo de futuros dev Full
+                Stack, quienes buscan profundizar en su aprendizaje.
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 medio-de-pago">
+              <h6 class="text-uppercase fw-bold fs-5 mb-4">METODOS DE PAGO</h6>
+              <p>
+                <img src="../img/footer/visa@2x.png" />
+                <img src="../img/footer/mastercard@2x.png" />
+              </p>
+              <p>
+                <img src="../img/footer/mercadopago@2x.png" />
+                <img src="../img/footer/rapipago@2x.png" />
+              </p>
+              <p>
+                <img src="../img/footer/tarjeta-naranja@2x.png" />
+                <img src="../img/footer/pagofacil@2x.png" />
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold fs-5 mb-4">CONTACTO</h6>
+              <p>
+                <i class="fas fa-home me-3"></i> San Lorenzo 643, Tucuman,
+                Argentina
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                Blare@ayuda.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 54 381 862 23</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center p-4 text-light" style="background-color: #000000">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+          >MDBootstrap.com</a
+        >
+        <a class="text-reset fw-bold" href="pages/sobre-nosotros.html"
+          >| GRUPO F - Comision 33i</a
+        >
+      </div>
+    </footer>
+    <!-- Fin Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/index.js"></script>
+  </body>
+</html>
