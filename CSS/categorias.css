@@ -21,6 +21,19 @@ background-size: cover;
   height: auto;
 }
 
+.botones {
+  width: 98%;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 1rem;
+}
+.botones button {
+  border-radius: 1rem;
+  padding: 0.8rem;
+  background-color: #ffffff65;
+}
+
 .tarjeta-categoria:hover {
   box-shadow: 5px 5px 20px rgba(254, 254, 254, 0.5);
 }
