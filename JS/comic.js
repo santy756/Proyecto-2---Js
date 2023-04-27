@@ -143,7 +143,7 @@ function CargarProductos (productoFiltrado) {
         <p class="card-text">Precio: <strong>$${comic.precio_unitario}</strong></p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
           <a
-            href="../pages/productos/producto 1.html"
+            href="../pages/producto_id.html?id=${comic.codigo_unico}"
             class="btn btn-outline-dark"
             >Producto</a
           >
@@ -169,7 +169,7 @@ CargarProductos (comic_lista);
 
 botonesFiltro.forEach(boton => {
   boton.addEventListener("click", (e)=>{
-    
+
     botonesFiltro.forEach(boton => boton.classList.remove("active"));
 
     e.target.classList.add("active");
@@ -186,3 +186,16 @@ botonesFiltro.forEach(boton => {
 
   })
 });
+
+
+localStorage.setItem("comic_lista", JSON.stringify(comic_lista));
+const comicsEnLS = JSON.parse(localStorage.getItem("comic_lista"))
+
+
+if (comicsEnLS) {
+  let htmlstring = "";
+  comicsEnLS.forEach(element => {
+    htmlstring += CargarProductos(element);
+  });
+
+}

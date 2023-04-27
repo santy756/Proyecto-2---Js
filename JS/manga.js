@@ -177,7 +177,7 @@ const contenedorProducto = document.querySelector("#contenedor-productos")
           <p class="card-text">Precio: <strong>$${manga.precio_unitario}</strong></p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <a
-              href="../pages/productos/producto 1.html"
+              href="../pages/producto_id.html?id=${manga.codigo_unico}"
               class="btn btn-outline-dark"
               >Producto</a
             >
@@ -199,3 +199,16 @@ const contenedorProducto = document.querySelector("#contenedor-productos")
   };
   
   CargarProductos (manga_lista);
+
+
+  localStorage.setItem("manga_lista", JSON.stringify(manga_lista));
+  const mangasEnLS = JSON.parse(localStorage.getItem("manga_lista"))
+  
+
+  if (mangasEnLS) {
+    let htmlstring = "";
+    mangasEnLS.forEach(element => {
+      htmlstring += CargarProductos(element);
+    });
+
+  }

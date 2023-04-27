@@ -157,6 +157,8 @@ const libros_lista = [
     },
   ];
 
+
+
   const contenedorProducto = document.querySelector("#contenedor-productos");
 
   function CargarProductos () {
@@ -178,7 +180,7 @@ const libros_lista = [
           <p class="card-text">Precio: <strong>$${libro.precio_unitario}</strong></p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <a
-              href="../pages/productos/producto 1.html"
+              href="../pages/producto_id.html?id=${libro.codigo_unico}"
               class="btn btn-outline-dark"
               >Producto</a
             >
@@ -201,5 +203,15 @@ const libros_lista = [
   
   CargarProductos (libros_lista);
 
+  localStorage.setItem("libros_lista", JSON.stringify(libros_lista));
+  const librosEnLS = JSON.parse(localStorage.getItem("libros_lista"))
+  
 
 
+  if (librosEnLS) {
+    let htmlstring = "";
+    librosEnLS.forEach(element => {
+      htmlstring += CargarProductos(element);
+    });
+
+  }
