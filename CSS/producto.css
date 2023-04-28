@@ -15,6 +15,11 @@ background-size: cover;
   margin: 2rem;
 }
 
+#imagen-producto-detalle{
+  width: 100%;
+  height: 100%;
+}
+
 .carta-superior img {
   object-fit: cover;
 }
