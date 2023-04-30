@@ -120,15 +120,13 @@ const comic_lista = [
   },
 ]
 
-const contenedorProducto = document.querySelector("#contenedor-productos")
-const botonesFiltro =  document.querySelectorAll(".botones-filtro")
+const contenedorProducto = document.querySelector("#contenedor-productos");
 
-
-function CargarProductos (productoFiltrado) {
+function CargarProductos () {
 
   contenedorProducto.innerHTML = "";
 
-  productoFiltrado.forEach(comic => {
+  comic_lista.forEach(comic => {
     const carta = document.createElement("carta")
     carta.classList.add("producto")
     carta.innerHTML = `
@@ -166,35 +164,14 @@ function CargarProductos (productoFiltrado) {
 
 CargarProductos (comic_lista);
 
-
-botonesFiltro.forEach(boton => {
-  boton.addEventListener("click", (e)=>{
-
-    botonesFiltro.forEach(boton => boton.classList.remove("active"));
-
-    e.target.classList.add("active");
-
-
-    if (e.currentTarget.id!="Todos") {
-      const busquedaFiltrada = comic_lista.filter (producto => producto.editorial === e.currentTarget.id);
-      CargarProductos(busquedaFiltrada);
-    } else (
-      CargarProductos(comic_lista)
-    )
-
-    
-
-  })
-});
-
-
 localStorage.setItem("comic_lista", JSON.stringify(comic_lista));
-const comicsEnLS = JSON.parse(localStorage.getItem("comic_lista"))
+const comicEnLS = JSON.parse(localStorage.getItem("comic_lista"))
 
 
-if (comicsEnLS) {
+
+if (comicEnLS) {
   let htmlstring = "";
-  comicsEnLS.forEach(element => {
+  comicEnLS.forEach(element => {
     htmlstring += CargarProductos(element);
   });
 

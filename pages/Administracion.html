@@ -262,66 +262,45 @@
     <!--FIN NAVBAR-->
 
     <!-- CONTENIDO PRINCIPAL -->
-    <div class="bg-css">    
-        <div class="card w-75 d-flex justify-content-center ">
-            <div class="card-header">
-              Agregar elemento a la pagina
-            </div>
-            <div class="card-body">
-                <div class="mb-3 " >
-                    <input type="text" class="form-control" id="datoInput" placeholder="Nombre">
-                    <input type="text" class="form-control" id="datoInput" placeholder="Precio sin signo $">
-                    <input type="text" class="form-control" id="datoInput" placeholder="Img">
-                </div>                 
-                <button type="button" class="btn btn-primary" id="agregar-elemento"
-                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+    <div class="bg-css">
+      <div class="card w-75 d-flex justify-content-center">
+        <div class="card-header">Agregar elemento a la pagina</div>
+        <div class="card-body">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="datoNombre"
+              placeholder="Nombre"
+            />
+            <input
+              type="text"
+              class="form-control"
+              id="datoPrecio"
+              placeholder="Precio sin signo $"
+            />
+            <input
+              type="text"
+              class="form-control"
+              id="datoUrl"
+              placeholder="Img"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="agregar-elemento"
+            style="
+              --bs-btn-padding-y: 0.25rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
             Agregar elemento
-                </button>
-            </div>
-          </div>
-    </div>
-    
-    <!--PUBLICIDAD-->
-    <div class="publicidad">
-      <div
-        id="carouselExampleDark"
-        class="carousel carousel-dark slide carta-publi"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img
-              src="img/Publicidad/publi1.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img
-              src="img/Publicidad/publi2.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img/Publicidad/publi3.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img/Publicidad/publi4.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
+          </button>
         </div>
       </div>
     </div>
-    <!--PUBLICIDAD-->
-
     <!-- FIN CONTENIDO PRINCIPAL -->
 
     <!-- Footer -->
@@ -408,6 +387,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    
+    <script src="../JS/test.js"></script>
   </body>
 </html>

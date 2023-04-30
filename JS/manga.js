@@ -205,10 +205,10 @@ const contenedorProducto = document.querySelector("#contenedor-productos")
   const mangasEnLS = JSON.parse(localStorage.getItem("manga_lista"))
   
 
-  if (mangasEnLS) {
-    let htmlstring = "";
-    mangasEnLS.forEach(element => {
-      htmlstring += CargarProductos(element);
-    });
+  // if (mangasEnLS) {
+  //   let htmlstring = "";
+  //   mangasEnLS.forEach(element => {
+  //     htmlstring += CargarProductos(element);
+  //   });
 
-  }
+  // }

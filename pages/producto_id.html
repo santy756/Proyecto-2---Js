@@ -17,7 +17,7 @@
     <link rel="Stylesheet" href="../CSS/categorias.css" />
     <!--AQUI IRA EL CSS CORRESPONDIENTE A CADA PAGINA-->
     <link rel="Stylesheet" href="../CSS/index.css" />
-    <link rel="stylesheet" href="../CSS/producto.css">
+    <link rel="stylesheet" href="../CSS/producto.css" />
   </head>
   <body>
     <!--NAVBAR-->
@@ -90,17 +90,13 @@
                 >SOBRE NOSOTROS</a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/Administracion.html" id="admin"
+                >ADMINISTRAR</a
+              >
+            </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder=""
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-light btn-lupa" type="submit">
-              Buscar
-            </button>
+          <a class="btn btn-danger cerrar_ses" id="logout">Cerrar sesion</a>
           </form>
         </div>
       </div>
@@ -140,20 +136,21 @@
                     <input
                       type="email"
                       class="form-control"
-                      id="floatingInput"
+                      id="imputemaillog"
                       placeholder="name@example.com"
                     />
-                    <label for="floatingInput">Usuario</label>
+                    <label for="imputemaillog">Usuario</label>
                   </div>
                   <div class="form-floating">
                     <input
                       type="password"
                       class="form-control"
-                      id="floatingPassword"
+                      id="imputpasslog"
                       placeholder="Password"
                     />
-                    <label for="floatingPassword">Contraseña</label>
+                    <label for="imputpasslog">Contraseña</label>
                   </div>
+                  <label id="error_en_blanco" class="error"></label>
                 </div>
               </div>
             </div>
@@ -172,7 +169,7 @@
           </div>
           <div class="modal-footer">
             <div role="group" aria-label="First group">
-              <button type="button" class="btn btn-outline-danger">
+              <button type="button" class="btn btn-outline-danger" id="inicio">
                 Iniciar Sesion
               </button>
             </div>
@@ -259,12 +256,11 @@
     <!--FIN NAVBAR-->
 
     <!-- CONTENIDO PRINCIPAL -->
-    
-    <div class="detalle-producto" id="detalle-producto">
 
-    </div>
-    
-    
+    <div class="detalle-producto" id="detalle-producto"></div>
+    <div class="detalle-producto" id="detalle-producto1"></div>
+    <div class="detalle-producto" id="detalle-producto2"></div>
+
     <!-- FIN CONTENIDO PRINCIPAL -->
 
     <!-- Footer -->
@@ -352,5 +348,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="../JS/producto_id.js"></script>
+    <script src="../JS/producto_id_comic.js"></script>
+    <script src="../JS/producto_id.js"></script>
+    <script src="../JS/login.js"></script>
   </body>
 </html>
