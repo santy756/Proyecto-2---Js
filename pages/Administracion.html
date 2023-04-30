@@ -21,10 +21,10 @@
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg bg-light navegacion">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="img/icono.png" alt="" width="30" height="24" />
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/icono.png" alt="" width="30" height="24" />
         </a>
-        <a class="navbar-brand" href="index.html">BLARE</a>
+        <a class="navbar-brand" href="../index.html">BLARE</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html"
+              <a class="nav-link" aria-current="page" href="../index.html"
                 >INICIO</a
               >
             </li>
@@ -50,6 +50,7 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                id="inicio_reg"
               >
                 INGRESAR
               </a>
@@ -65,7 +66,7 @@
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="pages/registro.html"
+                  <a class="dropdown-item" href="./registro.html"
                     >Registrarse</a
                   >
                 </li>
@@ -81,29 +82,20 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/ayuda.html">AYUDA</a>
+              <a class="nav-link" href="./ayuda.html">AYUDA</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/sobre-nosotros.html"
+              <a class="nav-link" href="./sobre-nosotros.html"
                 >SOBRE NOSOTROS</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/sobre-nosotros.html"
+              <a class="nav-link" href="./pages/Administracion.html" id="admin"
                 >ADMINISTRAR</a
               >
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder=""
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-light btn-lupa" type="submit">
-              Buscar
-            </button>
+          <a class="btn btn-danger cerrar_ses" id="logout">Cerrar sesion</a>
           </form>
         </div>
       </div>
@@ -126,13 +118,14 @@
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
+              id="cerrar"
             ></button>
           </div>
           <div class="card mb-3" style="max-width: 540px">
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="img/icono.png"
+                  src="../img/icono.png"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
@@ -143,20 +136,21 @@
                     <input
                       type="email"
                       class="form-control"
-                      id="floatingInput"
+                      id="imputemaillog"
                       placeholder="name@example.com"
                     />
-                    <label for="floatingInput">Usuario</label>
+                    <label for="imputemaillog">Usuario</label>
                   </div>
                   <div class="form-floating">
                     <input
                       type="password"
                       class="form-control"
-                      id="floatingPassword"
+                      id="imputpasslog"
                       placeholder="Password"
                     />
-                    <label for="floatingPassword">Contraseña</label>
+                    <label for="imputpasslog">Contraseña</label>
                   </div>
+                  <label id="error_en_blanco" class="error"></label>
                 </div>
               </div>
             </div>
@@ -164,18 +158,18 @@
           <h2 class="text-center">Ingresar con</h2>
           <div class="Botones-redes">
             <button type="button" class="btn-facebook">
-              <a href="./pages/error404.html">Facebook</a>
+              <a href="./error404.html">Facebook</a>
             </button>
             <button type="button" class="btn-google">
-              <a href="./pages/error404.html">Google</a>
+              <a href="./error404.html">Google</a>
             </button>
           </div>
           <div class="contraseña-olvidada">
-            <a href="./pages/error404.html"><p>¿Olvidaste tu contraseña?</p></a>
+            <a href="./error404.html"><p>¿Olvidaste tu contraseña?</p></a>
           </div>
           <div class="modal-footer">
             <div role="group" aria-label="First group">
-              <button type="button" class="btn btn-outline-danger">
+              <button type="button" class="btn btn-outline-danger" id="inicio">
                 Iniciar Sesion
               </button>
             </div>
@@ -205,7 +199,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="img/comic/flashpoint.png"
+                  src="../img/comic/flashpoint.png"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
@@ -225,7 +219,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="img/mangas/BnH 33.png"
+                  src="../img/mangas/BnH 33.png"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
@@ -253,7 +247,7 @@
               Cerrar
             </button>
             <button type="button" class="btn btn-outline-danger">
-              <a href="./pages/error404.html">Ir a pagar</a>
+              <a href="./error404.html">Ir a pagar</a>
             </button>
           </div>
         </div>
@@ -387,6 +381,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="../JS/login.js"></script>
     <script src="../JS/test.js"></script>
   </body>
 </html>

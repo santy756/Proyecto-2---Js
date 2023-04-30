@@ -4,6 +4,7 @@ const comprobar_contraseña = document.getElementById("reimputpass");
 const registrar = document.getElementById("registrar");
 const email_registro = document.getElementById("imputemail");
 const error_pass =document.getElementById("error_pass")
+const BLARE = document.getElementById("BLARE")
 let mail_reg= "";
 let pass_reg="";
 let comprobar_pass="";
@@ -18,6 +19,8 @@ registrar.addEventListener("click",function(e) {
             password: pass_reg ,
     }));
     error_pass.style.display = "none";
+    BLARE.click()
+    alert("se registro exitosamente")
 }else if (mail_reg=="" || pass_reg=="") {
         alert("coloque la informacion necesaria");
         error_pass.style.display = "none";
@@ -26,9 +29,7 @@ registrar.addEventListener("click",function(e) {
         error_pass.style.display = "block";
     }
 })
-registrar.addEventListener("click",function(e){ //es para probar , borrar despues
-    console.log(array_usuarios)
-})
+
 //almacena los valores en las variables correspondientes para ser usadas en la funcion de arriba
 contraseña_registro.addEventListener("change",function(e) {
   pass_reg = e.target.value

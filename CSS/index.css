@@ -344,3 +344,6 @@ a {
 #admin {
   display: none;
 }
+#logout {
+  display: none;
+}
