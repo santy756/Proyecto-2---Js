@@ -1,4 +1,6 @@
-const manga_lista = [
+const manga_lista1 =localStorage.getItem("manga_lista")
+if(!manga_lista1){
+  const manga_lista = [
     {
       codigo_unico: "manga-7",
       nombre: "Boku no Hero #1",
@@ -155,14 +157,18 @@ const manga_lista = [
         fecha_de_creacion: Date.now(),
         url_error: "../pages/error404.html",
       },
-  ]
+  ];
+  localStorage.setItem("manga_lista",JSON.stringify(manga_lista))
+}
+
 const contenedorProducto = document.querySelector("#contenedor-productos")
 
   function CargarProductos () {
-
+    const mangas_agregados=localStorage.getItem("manga_lista");
+    const manga_agregado_objetos = JSON.parse(mangas_agregados);
     contenedorProducto.innerHTML = "";
   
-    manga_lista.forEach(manga => {
+    manga_agregado_objetos.forEach(manga => {
       const carta = document.createElement("carta")
       carta.classList.add("producto")
       carta.innerHTML = `
@@ -198,17 +204,5 @@ const contenedorProducto = document.querySelector("#contenedor-productos")
   
   };
   
-  CargarProductos (manga_lista);
+  CargarProductos ();
 
-
-  localStorage.setItem("manga_lista", JSON.stringify(manga_lista));
-  const mangasEnLS = JSON.parse(localStorage.getItem("manga_lista"))
-  
-
-  // if (mangasEnLS) {
-  //   let htmlstring = "";
-  //   mangasEnLS.forEach(element => {
-  //     htmlstring += CargarProductos(element);
-  //   });
-
-  // }

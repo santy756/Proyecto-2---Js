@@ -1,4 +1,6 @@
-const libros_lista = [
+const libros_lista1 =localStorage.getItem("libros_lista")
+if(!libros_lista1){
+  const libros_lista = [
     {
       codigo_unico: "libro-1",
       nombre: "Game of Thrones: Volume I (en ingles)",
@@ -156,16 +158,20 @@ const libros_lista = [
       url_error: "../pages/error404.html",
     },
   ];
+  localStorage.setItem("libros_lista",JSON.stringify(libros_lista))
+}
+
 
 
 
   const contenedorProducto = document.querySelector("#contenedor-productos");
 
   function CargarProductos () {
-
+    const libros_agregados=localStorage.getItem("libros_lista");
+    const libros_agregado_objetos = JSON.parse(libros_agregados);
     contenedorProducto.innerHTML = "";
   
-    libros_lista.forEach(libro => {
+    libros_agregado_objetos.forEach(libro => {
       const carta = document.createElement("carta")
       carta.classList.add("producto")
       carta.innerHTML = `
@@ -201,17 +207,6 @@ const libros_lista = [
   
   };
   
-  CargarProductos (libros_lista);
+  CargarProductos ();
 
-  localStorage.setItem("libros_lista", JSON.stringify(libros_lista));
-  const librosEnLS = JSON.parse(localStorage.getItem("libros_lista"))
   
-
-
-  if (librosEnLS) {
-    let htmlstring = "";
-    librosEnLS.forEach(element => {
-      htmlstring += CargarProductos(element);
-    });
-
-  }
