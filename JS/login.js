@@ -1,4 +1,3 @@
-
 //#region inicio
 const inicio = document.getElementById("inicio");
 const mail_log = document.getElementById("imputemaillog");
@@ -31,7 +30,7 @@ inicio.addEventListener("click",function(e){
     }else if (usuario_local_storage.mail!=mail_in || usuario_local_storage.password!=pass_in){
         error_en_blanco.style.display = "block";
         administrar.style.display = "none";
-        error_en_blanco.innerHTML="los datos no coinciden";
+        error_en_blanco.innerHTML="Los datos no coinciden.";
         inicio_registro.style.display="block";
     }else {
         error_en_blanco.style.display = "none";
@@ -74,7 +73,7 @@ logout.addEventListener("click",function(e){
     administrar.style.display = "none";
     error_en_blanco.style.display = "block";
     inicio_registro.style.display="block";
-    alert("se a cerrado sesion exitosamente")
+    alert("Se ha cerrado sesion exitosamente.")
     localStorage.setItem("sesion", JSON.stringify({
         sesion:false ,
         sesion_admin:false,

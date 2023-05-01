@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="./../CSS/main.css" type="text/css" />
     <link rel="stylesheet" href="./../CSS/index.css" type="text/css" />
+    <link rel="stylesheet" href="../CSS/administracion.css">
   </head>
   <body>
     <!--NAVBAR-->
@@ -90,7 +91,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/Administracion.html" id="admin"
+              <a class="nav-link" href="Administracion.html" id="admin"
                 >ADMINISTRAR</a
               >
             </li>
@@ -257,44 +258,51 @@
 
     <!-- CONTENIDO PRINCIPAL -->
     <div class="bg-css">
-      <div class="card w-75 d-flex justify-content-center">
-        <div class="card-header">Agregar elemento a la pagina</div>
-        <div class="card-body">
-          <div class="mb-3">
-            <input
-              type="text"
-              class="form-control"
-              id="datoNombre"
-              placeholder="Nombre"
-            />
-            <input
-              type="text"
-              class="form-control"
-              id="datoPrecio"
-              placeholder="Precio sin signo $"
-            />
-            <input
-              type="text"
-              class="form-control"
-              id="datoUrl"
-              placeholder="Img"
-            />
-          </div>
-          <button
-            type="button"
-            class="btn btn-primary"
-            id="agregar-elemento"
-            style="
-              --bs-btn-padding-y: 0.25rem;
-              --bs-btn-padding-x: 0.5rem;
-              --bs-btn-font-size: 0.75rem;
-            "
-          >
-            Agregar elemento
-          </button>
+      <form class="formulario">
+        <div class="mb-3 w-75">
+          <label for="codigo_unico" class="form-label">Codigo unico</label>
+          <input type="text" class="form-control" id="codigo_unico" >          
         </div>
-      </div>
+        <div class="mb-3 w-75">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" >          
+        </div>
+        <div class="mb-3 w-75">
+          <label for="precio_unitario" class="form-label">Precio unitario</label>
+          <input type="number" class="form-control" id="precio_unitario" >          
+        </div>
+        <div class="mb-3 w-75">
+          <label for="categoria" class="form-label">Categoria</label>
+          <input type="text" class="form-control" id="categoria" >          
+        </div>
+        <div class="mb-3 w-75">
+          <label for="editorial" class="form-label">Editorial</label>
+          <input type="text" class="form-control" id="editorial" >          
+        </div>
+        <div class="mb-3 w-75">
+          <label for="imagen_ilustrativa" class="form-label">Imagen</label>
+          <input type="text" class="form-control" id="imagen_ilustrativa">
+        </div>
+        <div class="mb-3 w-75">
+          <label for="descripcion" class="form-label">Descripcion</label>
+          <input type="text" class="form-control" id="descripcion">
+        </div>
+        <div class="mb-3 w-75">
+          <label for="cantidad_stock" class="form-label">Cantidad Stock</label>
+          <input type="number" class="form-control" id="cantidad_stock">
+        </div>
+        <div class="mb-3 w-75">
+          <label for="url_error" class="form-label">URL Error</label>
+          <input type="text" class="form-control" id="url_error">
+        </div>
+        <div class="mb-1 form-check">
+          <input type="checkbox" class="form-check-input" id="stock_negativo">
+          <label class="form-check-label" for="stock_negativo">Stock negativo</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Agregar elemento</button>
+      </form>
     </div>
+    <div id="table"></div>
     <!-- FIN CONTENIDO PRINCIPAL -->
 
     <!-- Footer -->
@@ -309,16 +317,16 @@
           >
         </div>
         <div class="btn-redes">
-          <a href="pages/error404.html" class="me-4 text-reset btn-fb">
+          <a href="../pages/error404.html" class="me-4 text-reset btn-fb">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="pages/error404.html" class="me-4 text-reset btn-tw">
+          <a href="../pages/error404.html" class="me-4 text-reset btn-tw">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="pages/error404.html" class="me-4 text-reset btn-yt">
+          <a href="../pages/error404.html" class="me-4 text-reset btn-yt">
             <i class="fab fa-youtube"></i>
           </a>
-          <a href="pages/error404.html" class="me-4 text-reset btn-ig">
+          <a href="../pages/error404.html" class="me-4 text-reset btn-ig">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
@@ -328,7 +336,7 @@
           <div class="row mt-3">
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 class="text-uppercase fw-bold mb-4">
-                <img src="img/icono.png" alt="" width="100" height="85" />
+                <img src="../img/icono.png" alt="" width="100" height="85" />
               </h6>
               <p>
                 Blare es una marca creada por un grupo de futuros dev Full
@@ -338,16 +346,16 @@
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 medio-de-pago">
               <h6 class="text-uppercase fw-bold fs-5 mb-4">METODOS DE PAGO</h6>
               <p>
-                <img src="img/footer/visa@2x.png" />
-                <img src="img/footer/mastercard@2x.png" />
+                <img src="../img/footer/visa@2x.png" />
+                <img src="../img/footer/mastercard@2x.png" />
               </p>
               <p>
-                <img src="img/footer/mercadopago@2x.png" />
-                <img src="img/footer/rapipago@2x.png" />
+                <img src="../img/footer/mercadopago@2x.png" />
+                <img src="../img/footer/rapipago@2x.png" />
               </p>
               <p>
-                <img src="img/footer/tarjeta-naranja@2x.png" />
-                <img src="img/footer/pagofacil@2x.png" />
+                <img src="../img/footer/tarjeta-naranja@2x.png" />
+                <img src="../img/footer/pagofacil@2x.png" />
               </p>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -382,6 +390,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../JS/login.js"></script>
-    <script src="../JS/test.js"></script>
+    <script src="../Js/administrar.js"></script>
   </body>
 </html>

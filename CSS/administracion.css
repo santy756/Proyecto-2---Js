@@ -1,0 +1,27 @@
+.formulario {
+    margin: 2rem;
+    padding: 1rem;
+    width: 50%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.bg-css {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#table {
+    margin: 2rem;
+    border-radius: 5px;
+    background-color: white;
+    padding: .5rem;
+}
+
+  
