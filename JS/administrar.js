@@ -1,4 +1,4 @@
-//#region lista?
+//#region lista_base
 const producto_lista = localStorage.getItem('producto_lista');
 if (!producto_lista){
   const producto_lista = [
@@ -435,6 +435,7 @@ if (!producto_lista){
 localStorage.setItem("producto_lista",JSON.stringify(producto_lista))
 }
 //#endregion
+//#region llamada de id y constantes
 const productos = JSON.parse(localStorage.getItem("producto_lista"));
 const table = document.getElementById("table");
 const codigo_unico = document.getElementById("codigo_unico");
@@ -446,8 +447,7 @@ const imagen_ilustrativa = document.getElementById("imagen_ilustrativa");
 const descripcion = document.getElementById("descripcion");
 const cantidad_stock = document.getElementById("cantidad_stock");
 const agregar_producto = document.getElementById("agregar_producto");
-const agregar = document.getElementById("agregar_stock");
-const disminuir = document.getElementById("quitar_stock")
+
 
 
 let vcodigo_unico = "";
@@ -459,8 +459,8 @@ let vimagen_ilustrativa ="";
 let vdescripcion ="";
 let vcantidad_stock ="";
 let vurl_error ="";
-
-
+//#endregion
+//#region creacion de tabla
 let contador = 0;
 
 let htmlString = `<table class="table">
@@ -483,6 +483,8 @@ productos.forEach(producto => {
 htmlString += "</tbody></table>";
 table.innerHTML = htmlString;
 const boton_borrar = document.querySelectorAll("#eliminar")
+const agregar = document.querySelectorAll("#agregar_stock");
+const disminuir = document.querySelectorAll("#quitar_stock")
 
 function CreateItem (producto) {
     return `
@@ -493,10 +495,12 @@ function CreateItem (producto) {
         <td>${producto.precio_unitario}</td>
         <td>${producto.categoria}</td>
         <td>${producto.editorial}</td>
-        <td><button class="btn btn-light" id="agregar_stock">+</button> ${producto.cantidad_stock} <button class="btn btn-dark" id="quitar_stock">-</button></td>
+        <td><button class="btn btn-light" id="agregar_stock" name = "${producto.codigo_unico}">+</button> ${producto.cantidad_stock} <button class="btn btn-dark" id="quitar_stock"name = "${producto.codigo_unico}">-</button></td>
         <td><button class="btn btn-danger" id="eliminar" name ="${producto.codigo_unico}">x</button><td>
       </tr>`
 }
+//#endregion
+//#region   agregar producto
 codigo_unico.addEventListener("change",function (e) {
   vcodigo_unico = e.target.value
 })
@@ -559,14 +563,14 @@ agregar_producto.addEventListener("click",function (e) {
     localStorage.setItem("libros_lista",JSON.stringify(libros_agregado_objetos))
   }
 })
-
+//#endregion
+//#region   eliminar producto
 boton_borrar.forEach(btn => {
   btn.addEventListener("click",function(e){
     const lista_borrar =localStorage.getItem("producto_lista")
     const lista_borrar_obj =JSON.parse(lista_borrar)
     const nueva_lista = lista_borrar_obj.filter((productos) => productos.codigo_unico != e.target.name);
     localStorage.setItem("producto_lista",JSON.stringify(nueva_lista))
-    /////////////////////////////////////////////////////////////////para sacarlo de manga, comic , libro _lista
     if (e.target.name.charAt(0)== "m"){
       const mangas_agregados=localStorage.getItem("manga_lista");
     const manga_agregado_objetos = JSON.parse(mangas_agregados);
@@ -586,4 +590,35 @@ boton_borrar.forEach(btn => {
     window.location.reload()
   })
 })
+//#endregion
+//#region Stock modificar stock (el modificar precio deveria ser parecido pero bueno)
 
+agregar.forEach(btn => {
+  btn.addEventListener("click",function(e){
+    const lista_a_agregar =localStorage.getItem("producto_lista");
+    const lista_a_agregar_obj =JSON.parse(lista_a_agregar);
+    lista_a_agregar_obj.forEach(producto =>{
+      if (producto.codigo_unico == e.target.name){
+        producto.cantidad_stock ++
+        localStorage.setItem("producto_lista",JSON.stringify(lista_a_agregar_obj))
+      }
+    })
+    window.location.reload()
+ })
+})
+
+disminuir.forEach(btn => {
+  btn.addEventListener("click",function(e){
+    const lista_a_restar =localStorage.getItem("producto_lista");
+const lista_a_restar_obj =JSON.parse(lista_a_restar);
+    lista_a_restar_obj.forEach(producto =>{
+      if (producto.codigo_unico == e.target.name){
+        producto.cantidad_stock --
+        localStorage.setItem("producto_lista",JSON.stringify(lista_a_restar_obj))
+      }
+    })
+    window.location.reload()
+ })
+})
+
+//#endregion
