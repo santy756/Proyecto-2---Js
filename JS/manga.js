@@ -161,12 +161,12 @@ if(!manga_lista1){
   localStorage.setItem("manga_lista",JSON.stringify(manga_lista))
 }
 
-const contenedorProducto = document.querySelector("#contenedor-productos")
+const contenedorProducto_manga = document.querySelector("#contenedor-productos_manga")
 
   function CargarProductos () {
     const mangas_agregados=localStorage.getItem("manga_lista");
     const manga_agregado_objetos = JSON.parse(mangas_agregados);
-    contenedorProducto.innerHTML = "";
+   
   
     manga_agregado_objetos.forEach(manga => {
       const carta = document.createElement("carta")
@@ -199,7 +199,7 @@ const contenedorProducto = document.querySelector("#contenedor-productos")
         </div>
       </div>`;
       
-      contenedorProducto.append(carta)
+      contenedorProducto_manga.append(carta)
   });
   
   };

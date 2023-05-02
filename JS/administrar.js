@@ -449,6 +449,7 @@ const agregar_producto = document.getElementById("agregar_producto");
 const agregar = document.getElementById("agregar_stock");
 const disminuir = document.getElementById("quitar_stock")
 
+
 let vcodigo_unico = "";
 let vnombreProd = "";
 let vprecio_unitario = "";
@@ -481,7 +482,7 @@ productos.forEach(producto => {
 
 htmlString += "</tbody></table>";
 table.innerHTML = htmlString;
-
+const boton_borrar = document.querySelectorAll("#eliminar")
 
 function CreateItem (producto) {
     return `
@@ -493,7 +494,7 @@ function CreateItem (producto) {
         <td>${producto.categoria}</td>
         <td>${producto.editorial}</td>
         <td><button class="btn btn-light" id="agregar_stock">+</button> ${producto.cantidad_stock} <button class="btn btn-dark" id="quitar_stock">-</button></td>
-        <td><button class="btn btn-danger" id="${producto.codigo_unico}">x</button><td>
+        <td><button class="btn btn-danger" id="eliminar" name ="${producto.codigo_unico}">x</button><td>
       </tr>`
 }
 codigo_unico.addEventListener("change",function (e) {
@@ -558,3 +559,31 @@ agregar_producto.addEventListener("click",function (e) {
     localStorage.setItem("libros_lista",JSON.stringify(libros_agregado_objetos))
   }
 })
+
+boton_borrar.forEach(btn => {
+  btn.addEventListener("click",function(e){
+    const lista_borrar =localStorage.getItem("producto_lista")
+    const lista_borrar_obj =JSON.parse(lista_borrar)
+    const nueva_lista = lista_borrar_obj.filter((productos) => productos.codigo_unico != e.target.name);
+    localStorage.setItem("producto_lista",JSON.stringify(nueva_lista))
+    /////////////////////////////////////////////////////////////////para sacarlo de manga, comic , libro _lista
+    if (e.target.name.charAt(0)== "m"){
+      const mangas_agregados=localStorage.getItem("manga_lista");
+    const manga_agregado_objetos = JSON.parse(mangas_agregados);
+    const nueva_lista_manga = manga_agregado_objetos.filter((productos) => productos.codigo_unico != e.target.name);
+    localStorage.setItem("manga_lista",JSON.stringify(nueva_lista_manga))
+    } else if (e.target.name.charAt(0)== "c"){
+      const comics_agregados=localStorage.getItem("comic_lista");
+      const comic_agregado_objetos = JSON.parse(comics_agregados);
+      const nueva_lista_comic = comic_agregado_objetos.filter((productos) => productos.codigo_unico != e.target.name);
+    localStorage.setItem("comic_lista",JSON.stringify(nueva_lista_comic))
+    }else if (e.target.name.charAt(0)== "l"){
+      const libros_agregados=localStorage.getItem("libros_lista");
+      const libros_agregado_objetos = JSON.parse(libros_agregados);
+      const nueva_lista_libro = libros_agregado_objetos.filter((productos) => productos.codigo_unico != e.target.name);
+    localStorage.setItem("libros_lista",JSON.stringify(nueva_lista_libro))
+    }else {}
+    window.location.reload()
+  })
+})
+

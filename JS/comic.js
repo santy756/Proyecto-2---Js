@@ -129,7 +129,7 @@ const contenedorProducto = document.querySelector("#contenedor-productos");
 function CargarProductos () {
   const comics_agregados=localStorage.getItem("comic_lista");
   const comic_agregado_objetos = JSON.parse(comics_agregados);
-  contenedorProducto.innerHTML = "";
+  
 
   comic_agregado_objetos.forEach(comic => {
     const carta = document.createElement("carta")

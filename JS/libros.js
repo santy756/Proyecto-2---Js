@@ -164,12 +164,12 @@ if(!libros_lista1){
 
 
 
-  const contenedorProducto = document.querySelector("#contenedor-productos");
+  const contenedorProducto_libros = document.querySelector("#contenedor-productos_libros");
 
   function CargarProductos () {
     const libros_agregados=localStorage.getItem("libros_lista");
     const libros_agregado_objetos = JSON.parse(libros_agregados);
-    contenedorProducto.innerHTML = "";
+    
   
     libros_agregado_objetos.forEach(libro => {
       const carta = document.createElement("carta")
@@ -202,7 +202,7 @@ if(!libros_lista1){
         </div>
       </div>`;
       
-      contenedorProducto.append(carta)
+      contenedorProducto_libros.append(carta)
   });
   
   };
