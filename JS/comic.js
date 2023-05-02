@@ -124,11 +124,18 @@ if(!comic_lista1){
 }
 
 
+
+
+const comics_agregados=localStorage.getItem("comic_lista");
+const comic_agregado_objetos = JSON.parse(comics_agregados);
+
+
+
 const contenedorProducto = document.querySelector("#contenedor-productos");
+let btn_agregar_comic = document.querySelectorAll(".btn_agregar_comic") ;
 
 function CargarProductos () {
-  const comics_agregados=localStorage.getItem("comic_lista");
-  const comic_agregado_objetos = JSON.parse(comics_agregados);
+  
   
 
   comic_agregado_objetos.forEach(comic => {
@@ -152,8 +159,8 @@ function CargarProductos () {
           >
           <button
             type="button"
-            class="btn btn-outline-danger"
-            id="liveToastBtn"
+            class="btn btn-outline-danger btn_agregar_comic"
+            id="${comic.codigo_unico}"
             
           >
             Agregar
@@ -167,5 +174,34 @@ function CargarProductos () {
 
 };
 
+
 CargarProductos ();
 
+btnAgregarComic();
+
+  function btnAgregarComic() {
+    btn_agregar_comic = document.querySelectorAll(".btn_agregar_comic") ;
+    btn_agregar_comic.forEach(btn => {
+      btn.addEventListener("click", agregarAlCarrito)
+    })
+  }
+
+  const productosEnCarrito =  [];
+
+  function agregarAlCarrito(e) {
+    const idComic = e.currentTarget.id;
+    console.log(idComic);
+    const comicAgregado = comic_agregado_objetos.find(producto => producto.codigo_unico === idComic)
+    
+    
+    
+    if (productosEnCarrito.some(producto => producto.codigo_unico === idComic)) {
+      const indexComic = productosEnCarrito.findIndex(producto => producto.codigo_unico === idComic)
+      productosEnCarrito[indexComic].cantidad++;
+    } else {
+      comicAgregado.cantidad = 1;
+      productosEnCarrito.push(comicAgregado);
+    }
+
+    localStorage.setItem("productoEnCarrito", JSON.stringify(productosEnCarrito))
+  }

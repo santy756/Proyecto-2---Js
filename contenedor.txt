@@ -1,0 +1,153 @@
+<div class="modal-content " id="Carrito">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Mis compras</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="img/comic/flashpoint.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Flashpoint</h5>
+                  <p class="card-text">Precio: $11039</p>
+                  <p class="card-text">
+                    <small class="text-muted">Agregado recientemente</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="img/mangas/BnH 33.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">BOKU NO HERO #33</h5>
+                  <p class="card-text">Precio: $953</p>
+                  <p class="card-text">
+                    <small class="text-muted">Agregado recientemente</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-end subtotal">
+            Total:<b class="text-danger">$11992</b>
+          </p>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-outline-danger">
+              <a href="./pages/error404.html">Ir a pagar</a>
+            </button>
+          </div>
+        </div>
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="img/comic/flashpoint.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Flashpoint</h5>
+                  <p class="card-text">Precio: $11039</p>
+                  <p class="card-text">
+                    <small class="text-muted">Agregado recientemente</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Mis compras</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="img/comic/flashpoint.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Flashpoint</h5>
+                  <p class="card-text">Precio: $11039</p>
+                  <p class="card-text">
+                    <small class="text-muted">Agregado recientemente</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="img/mangas/BnH 33.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">BOKU NO HERO #33</h5>
+                  <p class="card-text">Precio: $953</p>
+                  <p class="card-text">
+                    <small class="text-muted">Agregado recientemente</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-end subtotal">
+            Total:<b class="text-danger">$11992</b>
+          </p>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-outline-danger">
+              <a href="./pages/error404.html">Ir a pagar</a>
+            </button>
+          </div>
+        </div>

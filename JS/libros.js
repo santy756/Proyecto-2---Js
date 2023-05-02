@@ -161,15 +161,18 @@ if(!libros_lista1){
   localStorage.setItem("libros_lista",JSON.stringify(libros_lista))
 }
 
+const libros_agregados=localStorage.getItem("libros_lista");
+const libros_agregado_objetos = JSON.parse(libros_agregados);
+
 
 
 
   const contenedorProducto_libros = document.querySelector("#contenedor-productos_libros");
+  let btn_agregar_libro = document.querySelectorAll(".btn-agregar") ;
 
   function CargarProductos () {
     const libros_agregados=localStorage.getItem("libros_lista");
     const libros_agregado_objetos = JSON.parse(libros_agregados);
-    
   
     libros_agregado_objetos.forEach(libro => {
       const carta = document.createElement("carta")
@@ -192,8 +195,8 @@ if(!libros_lista1){
             >
             <button
               type="button"
-              class="btn btn-outline-danger"
-              id="liveToastBtn"
+              class="btn btn-outline-danger btn-agregar-libro"
+              id="${libro.codigo_unico}"
               
             >
               Agregar
@@ -202,11 +205,41 @@ if(!libros_lista1){
         </div>
       </div>`;
       
-      contenedorProducto_libros.append(carta)
+      contenedorProducto_libros.append(carta);
+
+      
+      
   });
   
   };
+ 
   
   CargarProductos ();
+  btnAgregar();
+
+  function btnAgregar() {
+    btn_agregar_libro = document.querySelectorAll(".btn-agregar-libro") ;
+    btn_agregar_libro.forEach(btn => {
+      btn.addEventListener("click", agregarAlCarrito)
+    })
+  }
+
+  const productosEnCarrito =  [];
+
+  function agregarAlCarrito(e) {
+    const idLibro = e.currentTarget.id;
+    const libroAgregado = libros_agregado_objetos.find(producto => producto.codigo_unico === idLibro)
+    
+    
+    if (productosEnCarrito.some(producto => producto.codigo_unico === idLibro)) {
+      const indexLibro = productosEnCarrito.findIndex(producto => producto.codigo_unico === idLibro)
+      productosEnCarrito[indexLibro].cantidad++;
+    } else {
+      libroAgregado.cantidad = 1;
+      productosEnCarrito.push(libroAgregado)
+    }
+
+    localStorage.setItem("productoEnCarrito", JSON.stringify(productosEnCarrito))
+  }
 
   
