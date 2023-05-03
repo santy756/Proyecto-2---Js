@@ -14,9 +14,11 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./../CSS/main.css" type="text/css" />
-    <link rel="stylesheet" href="./../CSS/index.css" type="text/css" />
-    <link rel="stylesheet" href="../CSS/administracion.css">
+    <link rel="Stylesheet" href="../CSS/registro.css" />
+    <!--AQUI IRA EL CSS CORRESPONDIENTE A CADA PAGINA-->
+    <link rel="Stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/miscompras.css">
+    <link rel="stylesheet" href="../css/producto.css">
   </head>
   <body>
     <!--NAVBAR-->
@@ -171,54 +173,26 @@
           </div>
         </div>
       </div>
-    </div>
-    
+    </div>    
     </div>
     <!--FIN NAVBAR-->
 
     <!-- CONTENIDO PRINCIPAL -->
-    <div class="bg-css">
-      <form class="formulario">
-        <div class="mb-3 w-75">
-          <label for="codigo_unico" class="form-label">Codigo unico</label>
-          <input type="text" class="form-control" id="codigo_unico" >          
+    
+    <div class="contenedor-parent">
+        <div class="contenedor-principal">  
+            <div class="card-header titulo-compras">
+              <h3>MIS COMPRAS</h3>                
+            </div>
+            <div class="ContenedorCarrito">
+                <div class="Carrito" id="Carrito">
+                </div>
+            </div>
+            <div class="card-footer total-compras" id="total-compras">
+                           
+            </div>
         </div>
-        <div class="mb-3 w-75">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" >          
-        </div>
-        <div class="mb-3 w-75">
-          <label for="precio_unitario" class="form-label">Precio unitario</label>
-          <input type="number" class="form-control" id="precio_unitario" >          
-        </div>
-        <div class="mb-3 w-75">
-          <label for="categoria" class="form-label">Categoria</label>
-          <input type="text" class="form-control" id="categoria" >          
-        </div>
-        <div class="mb-3 w-75">
-          <label for="editorial" class="form-label">Editorial</label>
-          <input type="text" class="form-control" id="editorial" >          
-        </div>
-        <div class="mb-3 w-75">
-          <label for="imagen_ilustrativa" class="form-label">Imagen</label>
-          <input type="text" class="form-control" id="imagen_ilustrativa">
-        </div>
-        <div class="mb-3 w-75">
-          <label for="descripcion" class="form-label">Descripcion</label>
-          <input type="text" class="form-control" id="descripcion">
-        </div>
-        <div class="mb-3 w-75">
-          <label for="cantidad_stock" class="form-label">Cantidad Stock</label>
-          <input type="number" class="form-control" id="cantidad_stock">
-        </div>
-        <div class="mb-1 form-check">
-          <input type="checkbox" class="form-check-input" id="stock_negativo">
-          <label class="form-check-label" for="stock_negativo">Stock negativo</label>
-        </div>
-        <button type="submit" class="btn btn-primary" id="agregar_producto">Agregar elemento</button>
-      </form>
-    </div>
-    <div id="table"></div>
+  </div>
     <!-- FIN CONTENIDO PRINCIPAL -->
 
     <!-- Footer -->
@@ -233,16 +207,16 @@
           >
         </div>
         <div class="btn-redes">
-          <a href="../pages/error404.html" class="me-4 text-reset btn-fb">
+          <a href="" class="me-4 text-reset btn-fb">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="../pages/error404.html" class="me-4 text-reset btn-tw">
+          <a href="" class="me-4 text-reset btn-tw">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="../pages/error404.html" class="me-4 text-reset btn-yt">
+          <a href="" class="me-4 text-reset btn-yt">
             <i class="fab fa-youtube"></i>
           </a>
-          <a href="../pages/error404.html" class="me-4 text-reset btn-ig">
+          <a href="" class="me-4 text-reset btn-ig">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
@@ -300,16 +274,13 @@
       </div>
     </footer>
     <!-- Fin Footer -->
-    <script src="../JS/login.js"></script>
-    <script src="../Js/administrar.js"></script>
-    <script src="../JS/comic.js"></script>
-    <script src="../JS/libros.js"></script>
-    <script src="../JS/manga.js"></script>
-    <!-- script boostrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="../JS/registro.js"></script>
+    <script src="../JS/login.js"></script>
+    <script src="../JS/carrito.js"></script>
   </body>
 </html>

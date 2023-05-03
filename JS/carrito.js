@@ -1,7 +1,8 @@
 const productosEnCarrito = JSON.parse(localStorage.getItem("productoEnCarrito"));
-
-const contenedorModalCarrito = document.getElementById("Carrito");
-console.log(contenedorModalCarrito);
+const contenedorModalCarrito = document.querySelector("#Carrito");
+let BotonEliminarCarrito = document.querySelectorAll(".boton_eliminar");
+let CarritoContenedorVacio = document.getElementById("CarritoContenedorVacio")
+const total = document.getElementById("total-compras")
 
 
 
@@ -9,12 +10,12 @@ function cargarProductoCarrito () {
     productosEnCarrito.forEach( producto => {
         const productoEnModal = document.createElement("productoCarrito")
         productoEnModal.innerHTML = `
-        <div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
+        <div class="card w-100 mb-3 tarjetaProducto" >
+          <div class="row g-0 tarjetaProducto">
+            <div class="col-md-4 tarjetaProducto">
               <img
                 src="${producto.imagen_ilustrativa}"
-                class="img-fluid rounded-start"
+                class="tarjetaProducto"
                 alt="..."
               />
             </div>
@@ -27,14 +28,48 @@ function cargarProductoCarrito () {
                   <small class="text-muted">Agregado recientemente</small>
                 </p>
               </div>
+              <button class="btn btn-danger boton_eliminar" id="${producto.codigo_unico}">Eliminar</button>
             </div>
           </div>
         </div>
         `;
         contenedorModalCarrito.append(productoEnModal)
-    });
+        
+    } );
+    actualizarBotonEliminar()
+    actualizarTotal()
     
 }
 
+if (productosEnCarrito) {
+  cargarProductoCarrito()
+  actualizarTotal()
+} else{
+}
 
-cargarProductoCarrito();
+function actualizarBotonEliminar() {
+  BotonEliminarCarrito = document.querySelectorAll(".boton_eliminar") ;
+  BotonEliminarCarrito.forEach(btn => {
+    btn.addEventListener("click", eliminarDelCarrito)
+  })
+}
+
+function eliminarDelCarrito(e) {
+  const idBoton = e.currentTarget.id;
+  const indexProductoEliminar = productosEnCarrito.findIndex(producto => producto.codigo_unico === idBoton)
+  productosEnCarrito.splice(indexProductoEliminar, 1);
+ 
+  
+  localStorage.setItem("productoEnCarrito",JSON.stringify(productosEnCarrito));
+  
+}
+
+contenedorModalCarrito.addEventListener("click", _ => {
+  location.reload()
+})
+
+
+function actualizarTotal() {
+  const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio_unitario*producto.cantidad), 0) 
+  total.innerHTML = `<h2>TOTAL: $${totalCalculado}</h2> <button class="btn btn-danger boton_eliminar" id="">COMPRAR AHORA</button>`;
+}

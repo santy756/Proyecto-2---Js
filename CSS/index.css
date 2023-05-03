@@ -347,3 +347,7 @@ body {
 #logout {
   display: none;
 }
+
+.boton_eliminar{
+  margin: 1rem;
+}
