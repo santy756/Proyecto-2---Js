@@ -161,7 +161,11 @@ if(!manga_lista1){
   localStorage.setItem("manga_lista",JSON.stringify(manga_lista))
 }
 
+const mangas_agregados=localStorage.getItem("manga_lista");
+const manga_agregado_objetos = JSON.parse(mangas_agregados);
+
 const contenedorProducto_manga = document.querySelector("#contenedor-productos_manga")
+let btn_agregar_manga = document.querySelectorAll(".btn-agregar-manga") ;
 
   function CargarProductos () {
     const mangas_agregados=localStorage.getItem("manga_lista");
@@ -189,8 +193,8 @@ const contenedorProducto_manga = document.querySelector("#contenedor-productos_m
             >
             <button
               type="button"
-              class="btn btn-outline-danger"
-              id="liveToastBtn"
+              class="btn btn-outline-danger btn-agregar-manga"
+              id="${manga.codigo_unico}"
               
             >
               Agregar
@@ -206,3 +210,39 @@ const contenedorProducto_manga = document.querySelector("#contenedor-productos_m
   
   CargarProductos ();
 
+  btnAgregar();
+
+  function btnAgregar() {
+    btn_agregar_manga = document.querySelectorAll(".btn-agregar-manga") ;
+    btn_agregar_manga.forEach(btn => {
+      btn.addEventListener("click", agregarAlCarrito)
+    })
+  }
+
+  let mangaEnCarrito =  [];
+
+  const mangaEnCarritoLS = JSON.parse(localStorage.getItem("productoEnCarrito"));
+  if (mangaEnCarritoLS){
+    mangaEnCarrito = mangaEnCarritoLS;
+  } else{
+    mangaEnCarrito =  [];
+  }
+  
+
+  function agregarAlCarrito(e) {
+    const idManga = e.currentTarget.id;
+    const mangaAgregado = manga_agregado_objetos.find(producto => producto.codigo_unico === idManga)
+    
+    
+    if (mangaEnCarrito.some(producto => producto.codigo_unico === idManga)) {
+      const indexManga = mangaEnCarrito.findIndex(producto => producto.codigo_unico === idManga)
+      mangaEnCarrito[indexManga].cantidad++;
+    } else {
+      mangaAgregado.cantidad = 1;
+      mangaEnCarrito.push(mangaAgregado)
+    }
+
+    localStorage.setItem("productoEnCarrito", JSON.stringify(mangaEnCarrito))
+  }
+
+  

@@ -186,7 +186,14 @@ btnAgregarComic();
     })
   }
 
-  const productosEnCarrito =  [];
+  let comicEnCarrito =  [];
+
+const comicEnCarritoLS = JSON.parse(localStorage.getItem("productoEnCarrito"));
+if (comicEnCarritoLS){
+  comicEnCarrito = comicEnCarritoLS;
+} else{
+  comicEnCarrito =  [];
+}
 
   function agregarAlCarrito(e) {
     const idComic = e.currentTarget.id;
@@ -195,13 +202,13 @@ btnAgregarComic();
     
     
     
-    if (productosEnCarrito.some(producto => producto.codigo_unico === idComic)) {
-      const indexComic = productosEnCarrito.findIndex(producto => producto.codigo_unico === idComic)
-      productosEnCarrito[indexComic].cantidad++;
+    if (comicEnCarrito.some(producto => producto.codigo_unico === idComic)) {
+      const indexComic = comicEnCarrito.findIndex(producto => producto.codigo_unico === idComic)
+      comicEnCarrito[indexComic].cantidad++;
     } else {
       comicAgregado.cantidad = 1;
-      productosEnCarrito.push(comicAgregado);
+      comicEnCarrito.push(comicAgregado);
     }
 
-    localStorage.setItem("productoEnCarrito", JSON.stringify(productosEnCarrito))
+    localStorage.setItem("productoEnCarrito", JSON.stringify(comicEnCarrito))
   }

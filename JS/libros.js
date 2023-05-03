@@ -224,22 +224,30 @@ const libros_agregado_objetos = JSON.parse(libros_agregados);
     })
   }
 
-  const productosEnCarrito =  [];
+  let libroEnCarrito =  [];
+
+  const libroEnCarritoLS = JSON.parse(localStorage.getItem("productoEnCarrito"));
+  if (libroEnCarritoLS){
+    libroEnCarrito = libroEnCarritoLS;
+  } else{
+    libroEnCarrito =  [];
+  }
+  
 
   function agregarAlCarrito(e) {
     const idLibro = e.currentTarget.id;
     const libroAgregado = libros_agregado_objetos.find(producto => producto.codigo_unico === idLibro)
     
     
-    if (productosEnCarrito.some(producto => producto.codigo_unico === idLibro)) {
-      const indexLibro = productosEnCarrito.findIndex(producto => producto.codigo_unico === idLibro)
-      productosEnCarrito[indexLibro].cantidad++;
+    if (libroEnCarrito.some(producto => producto.codigo_unico === idLibro)) {
+      const indexLibro = libroEnCarrito.findIndex(producto => producto.codigo_unico === idLibro)
+      libroEnCarrito[indexLibro].cantidad++;
     } else {
       libroAgregado.cantidad = 1;
-      productosEnCarrito.push(libroAgregado)
+      libroEnCarrito.push(libroAgregado)
     }
 
-    localStorage.setItem("productoEnCarrito", JSON.stringify(productosEnCarrito))
+    localStorage.setItem("productoEnCarrito", JSON.stringify(libroEnCarrito))
   }
 
   
