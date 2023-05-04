@@ -16,6 +16,8 @@
 * {
   font-family: "Antonio", sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 *::selection {
@@ -169,7 +171,6 @@ body {
 /* SECCIONES */
 
 .secciones {
-  width: 100%;
   height: 30vh;
   z-index: 50;
   margin: 1rem;
