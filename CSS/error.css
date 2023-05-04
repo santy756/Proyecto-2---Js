@@ -1,68 +1,72 @@
-@import url(main.css);
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 2rem;
+  }
+  
+  .container-titulo {
+    font-size: 8rem;
+    color: #ffffff;
+  }
+  
+  .container-parrafo {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-body {
-  background-color: rgb(189, 189, 194);
-  font-family: "Antonio";
-}
-div {
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  color: rgb(41, 38, 38);
-  border-color: rgb(42, 47, 87);
-}
+  .inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+  }
 
-h2 {
-  text-align: center;
-  color: rgb(47, 32, 134);
-  border-color: rgb(14, 15, 73);
-  font-style: bold;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 3rem;
-}
 
-.libro img {
-  height: 20rem;
-  width: 25rem;
-}
-.inicio {
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.inicio button {
-  background-color: rgb(47, 32, 134);
-  width: 6rem;
-  border-radius: 10px;
-  border: none;
-  text-shadow: 3px 3px 6px black, 0 0 1em rgb(111, 108, 108), 0 0 0.2em #ffffff;
-}
-
-a {
-  border-radius: 10px;
-  height: 100%;
-  text-decoration: none;
-}
-
-a button {
-  font-size: 1.5rem;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-}
-
-a:visited {
-  width: 80%;
-  color: rgb(255, 255, 255);
-}
-
-a:hover {
-  box-shadow: 5px 5px 20px rgba(16, 16, 16, 0.5);
-}
-a {
-  transition: 0.4s;
-}
+  .inicio button {
+    background-color: #79071f ;
+    width: 6rem;
+    border-radius: 10px;
+    border: none;
+    text-shadow: 3px 3px 6px black, 0 0 1em rgb(111, 108, 108), 0 0 0.2em #ffffff;
+  }
+  
+  a {
+    border-radius: 10px;
+    height: 100%;
+    text-decoration: none;
+  }
+  
+  a button {
+    font-size: 1.5rem;
+    color: #212529 ;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:visited {
+    width: 80%;
+    color: rgb(255, 255, 255);
+  }
+  
+  a:hover {
+    box-shadow: 5px 5px 20px rgb(221, 221, 221);
+  }
+  a {
+    transition: 0.4s;
+  }
+  

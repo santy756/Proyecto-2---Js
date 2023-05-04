@@ -43,7 +43,6 @@ function cargarProductoCarrito () {
 
 if (productosEnCarrito) {
   cargarProductoCarrito()
-  actualizarTotal()
 } else{
 }
 

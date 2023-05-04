@@ -74,6 +74,7 @@
 .imagen_producto {
     width: 100%;
     height: auto;
+   
 }
 
 
@@ -84,7 +85,8 @@
 }
 
 .tarjetaProducto{
-    height: 15rem !important;
+    height: 15rem;
+    object-fit: cover;
 }
 
 .total-compras {

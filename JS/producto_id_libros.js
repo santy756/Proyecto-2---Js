@@ -27,11 +27,11 @@ function crearProducto() {
           <div class="card-body ">
             <h2 class="card-title">${elementoFiltrado2.nombre}</h2>
             <p class="card-text precio">$${elementoFiltrado2.precio_unitario}</p>
-            <img src="../../img/producto/credit-card.svg"> 3 cuotas sin interés de $${elementoFiltrado2.precio_unitario / 3}</img>
+            <img src="../../img/producto/credit-card.svg"> 3 cuotas <strong>sin interés</strong> de $${elementoFiltrado2.precio_unitario / 3}</img>
             <div class="d-grid gap-2 col-6 mx-auto">
               <br>
               <button class="btn btn-outline-danger" data-bs-toggle="modal"
-            data-bs-target="#Carrito" type="button">AGREGAR AL CARRITO</button>
+            data-bs-target="#Carrito" type="button"><a href="../pages/error404.html">AGREGAR AL CARRITO</a></button>
             </div>
             <br>
             <h3>Descripcion del producto</h3>
