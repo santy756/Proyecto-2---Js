@@ -25,7 +25,7 @@ function crearProducto() {
         </div>
         <div class="col-md-8">
           <div class="card-body ">
-            <h5 class="card-title">La Noche más Oscura · DC Comic</h5>
+            <h2 class="card-title">${elementoFiltrado2.nombre}</h2>
             <p class="card-text precio">$${elementoFiltrado2.precio_unitario}</p>
             <img src="../../img/producto/credit-card.svg"> 3 cuotas sin interés de $${elementoFiltrado2.precio_unitario / 3}</img>
             <div class="d-grid gap-2 col-6 mx-auto">

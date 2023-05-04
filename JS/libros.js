@@ -8,7 +8,7 @@ if(!libros_lista1){
       categoria: "libro",
       editorial: "RRMartin",
       imagen_ilustrativa:"../img/libros/GoT 1.png",
-      descripcion:`La profecía de Blackest Night se ha hecho realidad: ¡una fuerza misteriosa está criando héroes y villanos fallecidos en un ejército de Black Lanterns no muertos! El poder combinado del Green Lantern Corps y una armada de superseres vivos ahora deben unirse en una lucha literalmente por sus vidas`,
+      descripcion:`La trama gira en torno a la lucha por el Trono de Hierro, que es el asiento de poder del reino. Después de la muerte del Rey Robert, varios personajes ambiciosos buscan aprovechar la oportunidad para tomar el trono. A través de la perspectiva de múltiples personajes, la historia se desarrolla con intriga política, luchas de poder y una amenaza creciente en el norte del reino, donde una fuerza oscura se prepara para atacar.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -21,7 +21,7 @@ if(!libros_lista1){
       categoria: "libro",
       editorial: "RRMartin",
       imagen_ilustrativa:"../img/libros/GoT 2.png",
-      descripcion:`El Batman que Ríe es la versión de Bruce Wayne de Tierra -22 del Multiverso Oscuro que se habia vuelto loco despues de ser expuesto a la Toxina del Joker despues de llevarlo al limite que transformaba a cualquier persona cerca en el proximo Joker`,
+      descripcion:`Un cometa del color de la sangre hiende el cielo, cargado de malos augurios. Y hay razones sobradas para pensar así: los Siete Reinos se ven sacudidos por las luchas intestinas entre los nobles por la sucesión al Trono de Hierro. En la otra orilla del mar Angosto, la princesa Daenerys Targaryen conduce a su pueblo de jinetes salvajes a través del desierto. Y en los páramos helados del norte, más allá del Muro, un ejército implacable avanza hacia un territorio asolado por el caos y las guerras fratricidas.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -34,7 +34,7 @@ if(!libros_lista1){
       categoria: "libro",
       editorial: "RRMartin",
       imagen_ilustrativa:"../img/libros/GoT 3.png",
-      descripcion:`La profecía de Blackest Night se ha hecho realidad: ¡una fuerza misteriosa está criando héroes y villanos fallecidos en un ejército de Black Lanterns no muertos! El poder combinado del Green Lantern Corps y una armada de superseres vivos ahora deben unirse en una lucha literalmente por sus vidas`,
+      descripcion:`Las huestes de los fugaces reyes de Poniente, descompuestas en hordas, asuelan y esquilman una tierra castigada por la guerra e indefensa ante un invierno que se anuncia inusitadamente crudo. Las alianzas nacen y se desvanecen como volutas de humo bajo el viento helado del Norte. Ajena a las intrigas palaciegas, e ignorante del auténtico peligro en ciernes, la Guardia de la Noche se ve desbordada por los salvajes. Y al otro lado del mundo, Daenerys Targaryen intenta reclutar en las Ciudades Libres un ejército con el que desembarcar en su tierra.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -47,7 +47,7 @@ if(!libros_lista1){
       categoria: "libro",
       editorial: "JKRowling",
       imagen_ilustrativa:"../img/libros/HP 5.png",
-      descripcion:`¿Cuál es el precio de la perfección? Tony Stark ha conseguido lo que quería, pero a un precio terrible. El “efecto axis” le ha cambiado: tiene más estilo y más confianza en sí mismo que nunca, y está listo para conducir a San Francisco hasta el futuro... Pero quizás se trate de un futuro de pesadilla.`,
+      descripcion:`Harry Potter y la Orden del Fénix, sigue a Harry Potter mientras lucha contra la negación pública del regreso de Lord Voldemort. Harry, junto con sus amigos y la Orden del Fénix, se prepara para la inminente guerra mientras deben lidiar con un Ministerio de Magia cada vez más autoritario y la presión de los exámenes escolares. En este volumen, la tensión entre Harry y su enemigo, Draco Malfoy, alcanza su punto más alto, mientras Harry se enfrenta a nuevas revelaciones sobre su conexión con Voldemort.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -60,7 +60,7 @@ if(!libros_lista1){
       categoria: "libro",
       editorial: "JKRowling",
       imagen_ilustrativa:"../img/libros/HP 3.png",
-      descripcion:`Ambientada tras los sucesos de la Civil War, los Illumintati (Rayo Negro, Reed Richards,Tony Stark y Doctor Strange) deciden exiliar al espacio a Hulk ante el peligro que este representa para la Tierra`,
+      descripcion:`Harry Potter y el Prisionero de Azkaban, lleva a los lectores en una aventura emocionante cuando un peligroso prisionero, Sirius Black, escapa de la prisión de Azkaban y se dirige a Hogwarts en busca de Harry Potter. Mientras tanto, Harry descubre la verdad detrás de la muerte de sus padres y aprende a enfrentarse a sus miedos mientras intenta protegerse a sí mismo y a sus amigos.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -73,7 +73,7 @@ if(!libros_lista1){
       categoria: "libro",
       editorial: "JKRowling",
       imagen_ilustrativa:"../img/libros/HP 6.png",
-      descripcion:`Spider Verse es un evento que tiene como protagonistas principales a todas (o casi todas) las versiones alternativas de Spider-Man en una misma historia.`,
+      descripcion:`Harry Potter y el Misterio del Príncipe, sigue a Harry mientras investiga el pasado de Lord Voldemort para descubrir sus debilidades. Con la ayuda de su profesor de Pociones, Horace Slughorn, y un misterioso libro de hechizos perteneciente a alguien conocido como "el príncipe mestizo", Harry descubre secretos oscuros que arrojan nueva luz sobre la historia de Voldemort. Mientras tanto, el romance florece entre Ron y Hermione, mientras Harry se siente atraído hacia Ginny Weasley. Sin embargo, la tranquilidad de Hogwarts se ve amenazada cuando los Mortífagos, los seguidores de Voldemort, comienzan a atacar a los magos y brujas de la comunidad mágica.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -86,7 +86,7 @@ if(!libros_lista1){
       categoria: "libro",
       editorial: "JRRTolkien",
       imagen_ilustrativa:"../img/libros/SdA 1.png",
-      descripcion:`A lo largo de los años, Wolverine ha sido un guerrero, un héroe, un renegado, un samurái, un maestro… y mucho más. Logan dedicó más de un siglo a ser el mejor en lo que hace… pero incluso los mejores eventualmente desaparecen. Un virus del Microverso se alojó en el cuerpo del mutante de las garras de adamantium (tal como vimos en Wolverine: Temporada de Caza). Esto alcanzó para incapacitar su poder curativo. Ahora Logan es mortal… y ya no podrá seguir escapando de las garras de la muerte.`,
+      descripcion:`En la adormecida e idílica Comarca, un joven hobbit recibe un encargo: custodiar el Anillo Único y emprender el viaje para su destrucción en la Grieta del Destino. Acompañado por magos, hombres, elfos y enanos, atravesará la Tierra Media y se internará en las sombras de Mordor, perseguido siempre por las huestes de Sauron, el Señor Oscuro, dispuesto a recuperar su creación para establecer el dominio definitivo del Mal.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -99,7 +99,7 @@ if(!libros_lista1){
       categoria: "libro",
       editorial: "JRRTolkien",
       imagen_ilustrativa:"../img/libros/SdA 2.png",
-      descripcion:`La historia se establece en un futuro distópico, causado por la aniquilación de todos los superhéroes del mundo a manos de algunos de los villanos del Universo Marvel.`,
+      descripcion:`La Compañía se ha disuelto y sus integrantes emprenden caminos separados. Frodo y Sam avanzan solos en su viaje a lo largo del río Anduin, perseguidos por la sombra misteriosa de un ser extraño que también ambiciona la posesión del Anillo. Mientras, hombres, elfos y enanos se preparan para la batalla final contra las fuerzas del Señor del Mal.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -112,7 +112,7 @@ if(!libros_lista1){
       categoria: "libro",
       editorial: "JRRTolkien",
       imagen_ilustrativa:"../img/libros/SdA 3.png",
-      descripcion:`El Flashpoint es un evento crucial en el universo DC porque cambia el rumbo del futuro y sucede cuando The Flash viaja al pasado para reescribir la línea del tiempo sin imaginar que este en realidad es el error que desencadena una serie de eventos desafortunados que ponen en peligro la existencia de la humanidad`,
+      descripcion:`Los ejércitos del Señor Oscuro van extendiendo cada vez más su maléfica sombra por la Tierra Media. Hombres, elfos y enanos unen sus fuerzas para presentar batalla a Sauron y sus huestes. Ajenos a estos preparativos, Frodo y Sam siguen adentrándose en el país de Mordor en su heroico viaje para destruir el Anillo de Poder en las Grietas del Destino.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -125,7 +125,7 @@ if(!libros_lista1){
       categoria: "libro",
       editorial: "HPLovecraft",
       imagen_ilustrativa:"../img/libros/chutulu.png",
-      descripcion:`El Flashpoint es un evento crucial en el universo DC porque cambia el rumbo del futuro y sucede cuando The Flash viaja al pasado para reescribir la línea del tiempo sin imaginar que este en realidad es el error que desencadena una serie de eventos desafortunados que ponen en peligro la existencia de la humanidad`,
+      descripcion:`Aunque varios son los autores que han contribuido a conformar los mitos de Cthullu, el núcleo de la mitología que envuelven se debe al genio del maestro de Providence, siendo sus discípulos y amigos quienes ahondaron en el camino trazado por Lovecraft y desarrollaron o completaron los senderos secundarios del conjunto. Los 13 relatos -ningún número más adecuado- que presentamos en esta cuidada edición de dos volúmenes, prologada y revisada por Luis Benítez, constituyen la columna vertebral de los mitos referidos.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -138,7 +138,7 @@ if(!libros_lista1){
       categoria: "libro",
       editorial: "HPLovecraft",
       imagen_ilustrativa:"../img/libros/chutulu 2.png",
-      descripcion:`El Flashpoint es un evento crucial en el universo DC porque cambia el rumbo del futuro y sucede cuando The Flash viaja al pasado para reescribir la línea del tiempo sin imaginar que este en realidad es el error que desencadena una serie de eventos desafortunados que ponen en peligro la existencia de la humanidad`,
+      descripcion:`Este segundo volumen de Los mitos de Cthulhu comprende siete escalofriantes relatos. Tal vez el más aterrador de todos, En las montañas…,una novela en sí misma, es la demostración perfecta del estilo Lovecraft, una perfecta sincronía entre el género de terror y el de la cincia ficción: los siniestros “Primordiales” llegan a la Tierra de más allá de las estrellas para crear a la humanidad por simple aburrimiento o error. Tal descubrimiento llena de pavor a los científicos/exploradores que protagonizan la historia. Un volumen único para los amantes del género.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -151,7 +151,7 @@ if(!libros_lista1){
       categoria: "libro",
       editorial: "HPLovecraft",
       imagen_ilustrativa:"../img/libros/lovecraft niños.png",
-      descripcion:`El Flashpoint es un evento crucial en el universo DC porque cambia el rumbo del futuro y sucede cuando The Flash viaja al pasado para reescribir la línea del tiempo sin imaginar que este en realidad es el error que desencadena una serie de eventos desafortunados que ponen en peligro la existencia de la humanidad`,
+      descripcion:`Una selección ilustrada de los cuentos más famosos del maestro del terror, H.P. Lovecraft. Una puerta de entrada para el descubrimiento de un género que fascina a miles de lectores en el mundo. Cuatro historias del maestro indiscutido de la literatura de horror, H. P.Lovecraft, para lectores valientes: "El llamado de Cthulhu", "Sueños en la Casade la Bruja", "El extraño" y "El pantano de la luna". Seres inmemoriales que unbuen día despiertan y quieren dominar el mundo, hechiceras malvadas, engendros diabólicos, casas embrujadas y pantanos malditos, esperan en estas páginas ilustradas. Un libro que despertará en los lectores jóvenes el gusto por un género que fascina a cientos de lectores en el mundo.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -237,6 +237,9 @@ const libros_agregado_objetos = JSON.parse(libros_agregados);
   function agregarAlCarrito(e) {
     const idLibro = e.currentTarget.id;
     const libroAgregado = libros_agregado_objetos.find(producto => producto.codigo_unico === idLibro)
+
+    const toastLiveExample = document.getElementById('liveToast')
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
     
     
     if (libroEnCarrito.some(producto => producto.codigo_unico === idLibro)) {
@@ -245,6 +248,7 @@ const libros_agregado_objetos = JSON.parse(libros_agregados);
     } else {
       libroAgregado.cantidad = 1;
       libroEnCarrito.push(libroAgregado)
+      toastBootstrap.show()
     }
 
     localStorage.setItem("productoEnCarrito", JSON.stringify(libroEnCarrito))

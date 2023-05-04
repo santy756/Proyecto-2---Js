@@ -1,3 +1,4 @@
+
 //#region lista_base
 const producto_lista = localStorage.getItem('producto_lista');
 if (!producto_lista){
@@ -460,6 +461,16 @@ let vdescripcion ="";
 let vcantidad_stock ="";
 let vurl_error ="";
 //#endregion
+const admin_loged = localStorage.getItem("sesion")
+const error_papu = document.getElementById("adonde_vas_papu") 
+const admin_loged_obj = JSON.parse(admin_loged)
+function problemitas (){
+  if (admin_loged_obj.sesion_admin == false){
+    error_papu.click()
+  }
+}
+problemitas()
+
 //#region creacion de tabla
 let contador = 0;
 
@@ -527,6 +538,7 @@ cantidad_stock.addEventListener("change",function (e) {
 })
 
 agregar_producto.addEventListener("click",function (e) {
+  
   e.preventDefault()
   const producto_agregado ={
     codigo_unico: vcodigo_unico,
@@ -541,7 +553,10 @@ agregar_producto.addEventListener("click",function (e) {
     fecha_de_creacion: Date.now(),
     url_error: "../pages/error404.html",
   }
-  const productos_agregados = localStorage.getItem("producto_lista");
+  if (vcodigo_unico == ""){
+    alert("datos incompletos")
+  } else {
+    const productos_agregados = localStorage.getItem("producto_lista");
   const producto_agregado_objetos =JSON.parse(productos_agregados);
   producto_agregado_objetos.push(producto_agregado);
   localStorage.setItem("producto_lista",JSON.stringify(producto_agregado_objetos));
@@ -561,6 +576,7 @@ agregar_producto.addEventListener("click",function (e) {
     const libros_agregado_objetos = JSON.parse(libros_agregados);
     libros_agregado_objetos.push(producto_agregado);
     localStorage.setItem("libros_lista",JSON.stringify(libros_agregado_objetos))
+  }
   }
 })
 //#endregion

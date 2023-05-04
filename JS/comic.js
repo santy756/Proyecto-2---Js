@@ -35,7 +35,7 @@ if(!comic_lista1){
       categoria: "comic",
       editorial: "DC Comics",
       imagen_ilustrativa:"../img/comic/injustice.png",
-      descripcion:`La profecía de Blackest Night se ha hecho realidad: ¡una fuerza misteriosa está criando héroes y villanos fallecidos en un ejército de Black Lanterns no muertos! El poder combinado del Green Lantern Corps y una armada de superseres vivos ahora deben unirse en una lucha literalmente por sus vidas`,
+      descripcion:`Injustice: Gods Among Us es un cómic de DC Comics que cuenta una historia alternativa en la que el Joker engaña a Superman para que mate a Lois Lane y destruya Metrópolis con una bomba nuclear. Como resultado, Superman se convierte en un dictador y establece un régimen autoritario. La historia sigue la lucha entre los héroes que se oponen a su régimen liderados por Batman y los que lo apoyan liderados por Wonder Woman.`,
       cantidad_stock: 10,
       stock_negativo: false,
       fecha_de_creacion: Date.now(),
@@ -167,7 +167,8 @@ function CargarProductos () {
           </button>        
         </div>
       </div>
-    </div>`;
+    </div>
+    `;
     
     contenedorProducto.append(carta)
 });
@@ -197,10 +198,10 @@ if (comicEnCarritoLS){
 
   function agregarAlCarrito(e) {
     const idComic = e.currentTarget.id;
-    console.log(idComic);
     const comicAgregado = comic_agregado_objetos.find(producto => producto.codigo_unico === idComic)
     
-    
+    const toastLiveExample = document.getElementById('liveToast')
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
     
     if (comicEnCarrito.some(producto => producto.codigo_unico === idComic)) {
       const indexComic = comicEnCarrito.findIndex(producto => producto.codigo_unico === idComic)
@@ -208,7 +209,12 @@ if (comicEnCarritoLS){
     } else {
       comicAgregado.cantidad = 1;
       comicEnCarrito.push(comicAgregado);
+      toastBootstrap.show()
     }
 
     localStorage.setItem("productoEnCarrito", JSON.stringify(comicEnCarrito))
   }
+// toast
+
+
+

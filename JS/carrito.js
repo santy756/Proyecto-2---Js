@@ -71,5 +71,5 @@ contenedorModalCarrito.addEventListener("click", _ => {
 
 function actualizarTotal() {
   const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio_unitario*producto.cantidad), 0) 
-  total.innerHTML = `<h2>TOTAL: $${totalCalculado}</h2> <button class="btn btn-danger boton_eliminar" id="">COMPRAR AHORA</button>`;
+  total.innerHTML = `<h2>TOTAL: $${totalCalculado}</h2> <button class="btn btn-danger boton_eliminar" id=""><a href="./error404.html">Comprar ahora</a></button>`;
 }
